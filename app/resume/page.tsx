@@ -210,17 +210,17 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <div className="w-0.5 h-32 bg-black"></div>
                 <div className="space-y-2">
-                  <h2 className="text-4xl font-sans font-semibold">MSc in Computer Science</h2>
-                  <h4 className="text-base font-sans font-semibold">STANDFORD UNIVERSITY</h4>
-                  <p>Focus on Distributed Systems & AI. 2012 - 2014</p>
+                  <h2 className="text-4xl font-sans font-semibold">Bachelor of Information Technology Engineering</h2>
+                  <h4 className="text-base font-sans font-semibold">National Universty of Laos</h4>
+                  <p>Focus on Software. 2025 - Now</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-0.5 h-32 bg-black"></div>
                 <div className="space-y-2">
-                  <h2 className="text-4xl font-sans font-semibold">BEng in Software Engineering</h2>
-                  <h4 className="text-base font-sans font-semibold">CHULALONGKORN UNIVERSITY</h4>
-                  <p>First Class Honors. 2008 - 2012</p>
+                  <h2 className="text-4xl font-sans font-semibold">Completed secondary education.</h2>
+                  <h4 className="text-base font-sans font-semibold">Nam Theun 2 Secondary School</h4>
+                  <p>First Class Honors. 2017 - 2025</p>
                 </div>
               </div>
             </div>

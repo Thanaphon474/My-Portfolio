@@ -129,7 +129,7 @@ export default function Home() {
               <a href="https://www.instagram.com/syq.starboy/">
                 <div className=" w-16 h-16 border-2 border-black rounded-lg flex items-center justify-center cursor-pointer">
                   <Image
-                    src="/Image/Instragram.png"
+                    src="/Image/instagram.png"
                     width={32}
                     height={32}
                     alt=""
@@ -138,12 +138,13 @@ export default function Home() {
               </a>
 
               <a href="https://wa.me/8562093995090">
-                <div className=" w-16 h-16 border-2 border-black rounded-lg flex items-center justify-center cursor-pointer">
+                <div className=" w-16 h-16 border-2 border-black rounded-lg flex items-center justify-center cursor-pointer overflow-hidden">
                   <Image
-                    src="/Image/Whatsapp.jpg"
+                    src="/Image/Whatsapp-Photoroom.png"
                     width={36}
                     height={36}
                     alt=""
+                    className="object-cover"
                   />
                 </div>
               </a>
@@ -172,7 +173,7 @@ export default function Home() {
             <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
               <div>
                 <Image
-                  src="/Image/Github.png"
+                  src="/Image/Github-Photoroom.png"
                   width={94}
                   height={94}
                   alt=""
@@ -210,7 +211,7 @@ export default function Home() {
             <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-4">
                 <Image
-                  src="/Image/CSS.png"
+                  src="/Image/CSS-Photoroom.png"
                   width={72}
                   height={72}
                   alt=""
@@ -248,7 +249,7 @@ export default function Home() {
             <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-4">
                 <Image
-                  src="/Image/Node Js.png"
+                  src="/Image/nodejs.png"
                   width={52}
                   height={52}
                   alt=""

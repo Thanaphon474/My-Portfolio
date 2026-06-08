@@ -92,11 +92,11 @@ export default function Home() {
                 <hr className="border border-neutral-300" />
                 <div className="flex items-center justify-between">
                   <div>
-                    <h1 className="text-6xl font-sans font-extrabold">120+</h1>
+                    <h1 className="text-6xl font-sans font-extrabold">0</h1>
                     <p className="text-sm font-sans font-medium tracking-wide text-neutral-500">PROJECTS COMPLETED</p>
                   </div>
                   <div>
-                    <h1 className="text-6xl font-sans font-extrabold">10+</h1>
+                    <h1 className="text-6xl font-sans font-extrabold">0</h1>
                     <p className="text-sm font-sans font-medium tracking-wide text-neutral-500">YEARS EXPERIENCE</p>
                   </div>
                 </div>
@@ -119,18 +119,18 @@ export default function Home() {
                       <div className="space-y-10">
                         <div className="flex items-center justify-between">
                           <div>
-                            <h6 className="font-semibold font-sans">MSc in Computer Science</h6>
-                            <p className="text-neutral-500 font-sans">Stanford University</p>
+                            <h6 className="font-semibold font-sans">Bachelor&apos;s Degree Program</h6>
+                            <p className="text-neutral-500 font-sans">Information Engineering, National University Of Laos.</p>
                           </div>
-                          <p className="font-semibold">2014 - 2016</p>
+                          <p className="font-semibold">2025 - Now</p>
                         </div>
                         
                         <div className="flex items-center justify-between">
                           <div>
-                            <h6 className="font-semibold font-sans">BEng in Software Engineering</h6>
-                            <p className="text-neutral-500 font-sans">Chulalongkorn University</p>
+                            <h6 className="font-semibold font-sans">Completed secondary education</h6>
+                            <p className="text-neutral-500 font-sans">Nam Theun2 Secondary School</p>
                           </div>
-                          <p className="font-semibold">2010 - 2014</p>
+                          <p className="font-semibold">2017 - 2025</p>
                         </div>
                       </div>
                     </div>

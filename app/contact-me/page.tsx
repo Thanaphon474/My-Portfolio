@@ -164,7 +164,7 @@ export default function Home() {
                           </div>
                           <div className="border border-black w-12 h-12 flex items-center justify-center pr-1 cursor-pointer">
                             <Image 
-                              src="/Icon/Share.png" 
+                              src="/Icon/share.png" 
                               width={20}
                               height={20}
                               alt="" 
