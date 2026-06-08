@@ -7,15 +7,15 @@ import { FaArrowRight } from "react-icons/fa";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-12 p-12">
-        <header className="flex items-center justify-between">
-          <h1 className="text-3xl font-extrabold font-sans">
+      <div className="flex flex-col gap-8 sm:gap-12 p-4 sm:p-8 lg:p-12">
+        <header className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <h1 className="text-2xl sm:text-3xl font-extrabold font-sans text-center md:text-left">
             PORTFOLIO_OS
           </h1>
 
-          <nav className="flex items-center gap-8">
+          <nav className="flex flex-col items-center gap-4 sm:flex-row sm:gap-8">
             <div>
-                <ul className="flex items-center justify-betweem gap-8">
+                <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 sm:gap-8">
                     <li>
                         <Link
                             href="/"
@@ -55,52 +55,52 @@ export default function Home() {
             </button>
           </nav>
         </header>
-        <hr className="border-t-2 border-neutral-300 -mt-6 -mx-12" />
+        <hr className="border-t-2 border-neutral-300 -mt-2 sm:-mt-6 -mx-4 sm:-mx-8 lg:-mx-12" />
 
-        <main className="flex flex-col gap-16 p-12">
-          <div className="flex gap-4">
-            <div className="relative rounded-full w-44 h-44 border border-black">
-              <Image 
-                src="/Image/Boy.png" 
+        <main className="flex flex-col gap-16 lg:p-12">
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center">
+            <div className="relative rounded-full w-44 h-44 border border-black shrink-0">
+              <Image
+                src="/Image/Boy.png"
                 fill
                 className="object-cover rounded-full"
-                alt="" 
+                alt=""
               />
             </div>
-            <div className="space-y-2.5">
-              <h1 className="text-5xl font-sans font-extrabold leading-16">THANAPHON <br />THAMMAVONGSA</h1>
-              <p className="text-2xl font-sans font-semibold text-gray-700">Full-stack Developer</p>
+            <div className="space-y-2.5 text-center sm:text-left">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-sans font-extrabold leading-tight lg:leading-16">THANAPHON THAMMAVONGSA</h1>
+              <p className="text-xl sm:text-2xl font-sans font-semibold text-gray-700">Full-stack Developer</p>
             </div>
           </div>
           <div className="flex gap-2">
-            <div className="w-0.5 h-32 bg-black"></div>
-            <p className="text-2xl font-sans font-semibold">A results-driven Full-Stack Developer with <br />+ years of experience in building scalable <br />web architectures and precision-engineered <br />digital solutions.</p>
+            <div className="w-0.5 self-stretch bg-black shrink-0"></div>
+            <p className="text-lg sm:text-2xl font-sans font-semibold">A results-driven Full-Stack Developer with + years of experience in building scalable web architectures and precision-engineered digital solutions.</p>
           </div>
           <div id="experience" className="space-y-6">
             <div className="flex items-center gap-4">
-              <p className="text-4xl font-sans font-semibold">EXPERIENCE</p>
+              <p className="text-3xl sm:text-4xl font-sans font-semibold">EXPERIENCE</p>
               <div className="h-px bg-black w-full"></div>
             </div>
             <div className="space-y-6">
-              <div className="border border-black w-full h-42.5 p-6 space-y-3.5 flex flex-col justify-start hover:bg-black hover:text-white group">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-3xl font-sans font-semibold">Senior Full-Stack Developer</h3>
+              <div className="border border-black w-full min-h-42.5 p-6 space-y-3.5 flex flex-col justify-start hover:bg-black hover:text-white group">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 className="text-2xl sm:text-3xl font-sans font-semibold">Senior Full-Stack Developer</h3>
                   <p className="text-sm font-sans text-black/70  group-hover:text-white">2020 - PRESENT</p>
                 </div>
                 <p className="text-sm font-sans font-medium tracking-wider">GLOBAL TECH SOLUTIONS</p>
                 <p className="text-base font-sans">Led development of core cloud infrastructure, managing high-availability clusters and implementing automated CI/CD pipelines that reduced deployment times by 40%.</p>
               </div>
-              <div className="border border-black w-full h-42.5 p-6 space-y-3.5 flex flex-col justify-start hover:bg-black hover:text-white group">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-3xl font-sans font-semibold">Web Architect</h3>
+              <div className="border border-black w-full min-h-42.5 p-6 space-y-3.5 flex flex-col justify-start hover:bg-black hover:text-white group">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 className="text-2xl sm:text-3xl font-sans font-semibold">Web Architect</h3>
                   <p className="text-sm font-sans text-black/70  group-hover:text-white">2016 - 2020</p>
                 </div>
                 <p className="text-sm font-sans font-medium tracking-wider">DIGITAL FRONTIERS</p>
                 <p className="text-base font-sans">Spearheaded front-end migration to modern frameworks, defining technical standards and mentoring a team of 12 developers on best practices in React and performance optimization.</p>
               </div>
-              <div className="border border-black w-full h-42.5 p-6 space-y-3.5 flex flex-col justify-start hover:bg-black hover:text-white group">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-3xl font-sans font-semibold">Senior Full-Stack Developer</h3>
+              <div className="border border-black w-full min-h-42.5 p-6 space-y-3.5 flex flex-col justify-start hover:bg-black hover:text-white group">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 className="text-2xl sm:text-3xl font-sans font-semibold">Senior Full-Stack Developer</h3>
                   <p className="text-sm font-sans text-black/70  group-hover:text-white">2014 - 2016</p>
                 </div>
                 <p className="text-sm font-sans font-medium tracking-wider">STARTUP HUB</p>
@@ -108,23 +108,23 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="skill" className="bg-black h-210 pt-12 pl-12 space-y-8">
+          <div id="skill" className="bg-black p-6 sm:p-12 space-y-8">
             <div className="flex items-center w-full gap-4">
-              <p className="text-4xl font-sans font-extrabold text-white shrink-0">TECHNICAL SKILLS</p>
-              <div className="h-px bg-white flex-1 mr-10"></div>
+              <p className="text-2xl sm:text-4xl font-sans font-extrabold text-white shrink-0">TECHNICAL SKILLS</p>
+              <div className="h-px bg-white flex-1"></div>
             </div>
-            <div className="grid grid-cols-4 gap-y-7">
-              <div className="border w-72 h-72 flex items-center justify-center group hover:bg-white">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 justify-items-center">
+              <div className="border border-white w-full max-w-72 aspect-square flex items-center justify-center group hover:bg-white">
                 <div>
                   <MdJavascript size={80} className="text-white ml-6 group-hover:text-black transition duration-300"/>
                   <p className="text-white group-hover:text-black">JAVASCRIPT (ES6+)</p>
                 </div>
               </div>
-              <div className="border w-72 h-72 flex items-center justify-center group hover:bg-white">
+              <div className="border border-white w-full max-w-72 aspect-square flex items-center justify-center group hover:bg-white">
                 <div>
-                  <Image 
-                    src="/resume/Reactt.png" 
-                    alt="" 
+                  <Image
+                    src="/resume/Reactt.png"
+                    alt=""
                     width={75}
                     height={75}
                     className="invert group-hover:invert-0 transition duration-300"
@@ -132,11 +132,11 @@ export default function Home() {
                   <p className="text-white text-center group-hover:text-black">REACT</p>
                 </div>
               </div>
-              <div className="border w-72 h-72 flex items-center justify-center group hover:bg-white">
+              <div className="border border-white w-full max-w-72 aspect-square flex items-center justify-center group hover:bg-white">
                 <div className="space-y-2">
-                  <Image 
-                    src="/resume/Nodejs.png" 
-                    alt="" 
+                  <Image
+                    src="/resume/Nodejs.png"
+                    alt=""
                     width={60}
                     height={60}
                     className="mt-3.5 ml-1 group-hover:invert"
@@ -144,81 +144,81 @@ export default function Home() {
                   <p className="text-white text-center group-hover:text-black">NODE.JS</p>
                 </div>
               </div>
-              <div className="border w-72 h-72 flex items-center justify-center group hover:bg-white">
+              <div className="border border-white w-full max-w-72 aspect-square flex items-center justify-center group hover:bg-white">
                 <div className="space-y-3 mt-5">
-                  <Image 
-                    src="/resume/Python.png" 
-                    alt="" 
+                  <Image
+                    src="/resume/Python.png"
+                    alt=""
                     width={50}
                     height={50}
-                    className="ml-4.5 group-hover:invert" 
+                    className="ml-4.5 group-hover:invert"
                   />
                   <p className="text-white text-center ml-3 group-hover:text-black">PYTHON</p>
                 </div>
               </div>
-              <div className="border w-72 h-72 flex items-center justify-center group hover:bg-white">
+              <div className="border border-white w-full max-w-72 aspect-square flex items-center justify-center group hover:bg-white">
                 <div>
                   <MdCss size={80} className="text-white ml-3.5 group-hover:text-black"/>
                   <p className="text-white text-center group-hover:text-black">TAILWIND CSS</p>
                 </div>
               </div>
-              <div className="border w-72 h-72 flex items-center justify-center group hover:bg-white">
+              <div className="border border-white w-full max-w-72 aspect-square flex items-center justify-center group hover:bg-white">
                 <div className="space-y-6 mt-2">
-                  <Image 
-                    src="/resume/Postgresql.webp" 
-                    alt="" 
+                  <Image
+                    src="/resume/Postgresql.webp"
+                    alt=""
                     width={40}
                     height={40}
-                    className="ml-9 group-hover:invert" 
+                    className="ml-9 group-hover:invert"
                   />
                   <p className="text-white text-center group-hover:text-black">POSTGRESQL</p>
                 </div>
               </div>
-              <div className="border w-72 h-72 flex items-center justify-center group hover:bg-white">
+              <div className="border border-white w-full max-w-72 aspect-square flex items-center justify-center group hover:bg-white">
                 <div className="mb-4">
-                  <Image 
-                    src="/resume/Aws.jpg" 
-                    alt="" 
+                  <Image
+                    src="/resume/Aws.jpg"
+                    alt=""
                     width={80}
                     height={80}
-                    className="group-hover:invert" 
+                    className="group-hover:invert"
                   />
                   <p className="text-white text-center group-hover:text-black">AWS</p>
                 </div>
               </div>
-              <div className="border w-72 h-72 flex items-center justify-center group hover:bg-white">
+              <div className="border border-white w-full max-w-72 aspect-square flex items-center justify-center group hover:bg-white">
                 <div className="space-y-4 mt-3">
-                  <Image 
-                    src="/resume/Docker.jpg" 
-                    alt="" 
+                  <Image
+                    src="/resume/Docker.jpg"
+                    alt=""
                     width={50}
                     height={50}
-                    className="ml-4 group-hover:invert" 
+                    className="ml-4 group-hover:invert"
                   />
                   <p className="text-white text-center ml-2 group-hover:text-black">DOCKER</p>
                 </div>
               </div>
-              
+
             </div>
           </div>
           <div id="education" className="space-y-6">
             <div className="flex items-center gap-4">
-              <h3 className="font-sans text-4xl font-semibold">EDUCATION</h3>
+              <h3 className="font-sans text-3xl sm:text-4xl font-semibold">EDUCATION</h3>
               <div className="h-px bg-black w-full"></div>
             </div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <div className="w-0.5 h-32 bg-black"></div>
+            <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
+              <div className="flex items-stretch gap-4">
+                <div className="w-0.5 self-stretch bg-black shrink-0"></div>
                 <div className="space-y-2">
-                  <h2 className="text-4xl font-sans font-semibold">Bachelor of Information Technology Engineering</h2>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-sans font-semibold">Bachelor of Information Technology Engineering</h2>
                   <h4 className="text-base font-sans font-semibold">National Universty of Laos</h4>
                   <p>Focus on Software. 2025 - Now</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-0.5 h-32 bg-black"></div>
+              <div className="flex items-stretch gap-4">
+                <div className="w-0.5 self-stretch bg-black shrink-0"></div>
                 <div className="space-y-2">
-                  <h2 className="text-4xl font-sans font-semibold">Completed secondary education.</h2>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-sans font-semibold">Completed secondary education.</h2>
                   <h4 className="text-base font-sans font-semibold">Nam Theun 2 Secondary School</h4>
                   <p>First Class Honors. 2017 - 2025</p>
                 </div>
@@ -227,33 +227,33 @@ export default function Home() {
           </div>
           <div className="space-y-10">
             <div className="flex items-center gap-4">
-              <h3 className="font-sans text-4xl font-semibold">PROJECT SPOTLIGHT</h3>
+              <h3 className="font-sans text-3xl sm:text-4xl font-semibold shrink-0">PROJECT SPOTLIGHT</h3>
               <div className="h-px bg-black w-full flex-1"></div>
             </div>
-            <div className="flex items-center gap-6">
-              <div className="relative border w-260 h-120">
-                <Image 
-                  src="/resume/Code1.webp" 
-                  alt="" 
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
+              <div className="relative border w-full lg:w-260 h-64 sm:h-96 lg:h-120">
+                <Image
+                  src="/resume/Code1.webp"
+                  alt=""
                   width={728}
                   height={728}
                   className="object-cover w-full h-full"
                 />
               </div>
-              <div className="space-y-6">
-                <div className="border w-100 h-57 flex flex-col items-center pt-10 space-y-4 hover:bg-black hover:text-white group">
-                  <Image 
-                    src="/resume/Circle.png" 
-                    alt="" 
+              <div className="flex flex-col gap-6 w-full lg:w-100">
+                <div className="border w-full min-h-57 flex flex-col items-center justify-center py-10 space-y-4 hover:bg-black hover:text-white group">
+                  <Image
+                    src="/resume/Circle.png"
+                    alt=""
                     width={60}
                     height={60}
                     className="group-hover:invert"
                   />
                   <p className="text-base font-sans font-medium tracking-wider">OPEN SOURCE CONTRIBUTOR</p>
                 </div>
-                <div className="border w-100 h-57 hover:bg-black hover:text-white">
+                <div className="border w-full min-h-57 hover:bg-black hover:text-white">
                   <div className="space-y-4 pt-4">
-                    <h2 className="font-sans text-4xl font-semibold text-center">Micro-Frontend Kit</h2>
+                    <h2 className="font-sans text-3xl sm:text-4xl font-semibold text-center">Micro-Frontend Kit</h2>
                     <p className="font-sans text-xl text-center">A lightweight framework for enterprise scaling.</p>
                   </div>
                   <div className="flex justify-end pr-8 pt-8">
@@ -266,20 +266,17 @@ export default function Home() {
         </main>
       </div>
 
-       
+
         <hr className="border border-neutral-300" />
-      <footer className="flex items-center justify-between h-30 px-20">
-        <h1 className="text-3xl font-extrabold font-sans">PORTFOLIO_OS</h1>
+      <footer className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row py-8 sm:py-0 sm:h-30 px-6 sm:px-20">
+        <h1 className="text-2xl sm:text-3xl font-extrabold font-sans">PORTFOLIO_OS</h1>
         <p className="font-bold text-xs font-sans">@2026 THANAPHON. BUILT WITH PRECISION</p>
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-6 sm:gap-12">
           <p className="font-bold text-xs font-sans">GITHUB</p>
           <p className="font-bold text-xs font-sans">LINKEDIN</p>
           <p className="font-bold text-xs font-sans">TWITTER</p>
         </div>
       </footer>
-
-
-      
     </>
   );
 }

@@ -4,14 +4,14 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-12 p-12">
-        <header className="flex items-center justify-center gap-64">
-          <h1 className="text-3xl font-extrabold font-sans">
+      <div className="flex flex-col gap-8 sm:gap-12 p-4 sm:p-8 lg:p-12">
+        <header className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-8">
+          <h1 className="text-2xl sm:text-3xl font-extrabold font-sans text-center md:text-left">
             PERSONAL PORTFOLIO
           </h1>
 
           <nav>
-            <ul className="flex items-center justify-betweem gap-8">
+            <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 md:gap-8">
               <li>
                 <Link
                   href="#"
@@ -55,63 +55,60 @@ export default function Home() {
             </ul>
           </nav>
 
-          
-            <button className="bg-black cursor-pointer transition hover:scale-110">
-              <a href="/resume">
-                <p className="text-white px-6 py-2 font-semibold">Resume</p>
-              </a>
-            </button>
-          
+          <button className="bg-black cursor-pointer transition hover:scale-110 self-center md:self-auto">
+            <a href="/resume">
+              <p className="text-white px-6 py-2 font-semibold">Resume</p>
+            </a>
+          </button>
         </header>
-        <hr className="border-t-2 border-neutral-300 -mt-6 -mx-12" />
+        <hr className="border-t-2 border-neutral-300 -mt-2 sm:-mt-6 -mx-4 sm:-mx-8 lg:-mx-12" />
 
-        <main className="flex flex-col gap-24 p-12">
+        <main className="flex flex-col gap-16 sm:gap-24 lg:p-12">
           <div>
-            <div className="flex items-center gap-32">
-              <div className="space-y-6">
+            <div className="flex flex-col-reverse items-center gap-8 lg:flex-row lg:gap-32">
+              <div className="space-y-6 text-center lg:text-left">
                 <h2>
-                  <span className="font-semibold font-sans text-4xl">
+                  <span className="font-semibold font-sans text-2xl sm:text-3xl lg:text-4xl">
                     Hello I&apos;m{" "}
                   </span>
-                  <span className="font-extrabold font-sans text-4xl">
+                  <span className="font-extrabold font-sans text-2xl sm:text-3xl lg:text-4xl">
                     Thanaphon Thammavongsa.
                   </span>
                 </h2>
                 <h3>
-                  <span className="font-extrabold font-sans text-4xl">
+                  <span className="font-extrabold font-sans text-2xl sm:text-3xl lg:text-4xl">
                     Full Stack{" "}
                   </span>
-                  <span className="font-extrabold font-sans text-5xl text-transparent [-webkit-text-stroke:2px_black]">
+                  <span className="font-extrabold font-sans text-3xl sm:text-4xl lg:text-5xl text-transparent [-webkit-text-stroke:2px_black]">
                     Developer
                   </span>
                 </h3>
                 <h3>
-                  <span className="font-semibold font-sans text-4xl fonts">
+                  <span className="font-semibold font-sans text-2xl sm:text-3xl lg:text-4xl fonts">
                     Based in{" "}
                   </span>
-                  <span className="font-extrabold font-sans text-5xl">
+                  <span className="font-extrabold font-sans text-3xl sm:text-4xl lg:text-5xl">
                     Laos.
                   </span>
                 </h3>
-                <p className="font-serif text-lg">
-                  I&apos;m a professional web Developer from Laos. I have spent{" "}
-                  <br />
+                <p className="font-serif text-base sm:text-lg max-w-prose mx-auto lg:mx-0">
+                  I&apos;m a professional web Developer from Laos. I have spent
                   the past 10+ years building my skills and reputation with my
-                  client base <br />
-                  and am always looking developer new work relationships.
+                  client base and am always looking developer new work
+                  relationships.
                 </p>
               </div>
-              <div>
+              <div className="shrink-0">
                 <Image
                   src="/Image/Boy.png"
                   width={720}
                   height={720}
-                  className="w-120 h-120 rounded-full object-cover shadow-lg transition mt-5"
+                  className="w-56 h-56 sm:w-80 sm:h-80 lg:w-120 lg:h-120 rounded-full object-cover shadow-lg transition mt-5"
                   alt=""
                 />
               </div>
             </div>
-            <div className="flex gap-12">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-12 lg:justify-start mt-10 lg:mt-12">
               <a href="https://www.facebook.com/thanaphon.thammavongsa.7">
                 <div className=" w-16 h-16 bg-black rounded-lg objec-cover flex items-center justify-center cursor-pointer">
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
@@ -163,14 +160,16 @@ export default function Home() {
           </div>
 
           <div id="skills" className="flex items-center justify-center">
-            <h2 className="font-sans text-5xl">
+            <h2 className="font-sans text-3xl sm:text-4xl lg:text-5xl">
               My{" "}
-              <span className="font-sans font-extrabold text-5xl">Skills</span>
+              <span className="font-sans font-extrabold text-3xl sm:text-4xl lg:text-5xl">
+                Skills
+              </span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-5 gap-x-24 gap-y-12">
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-10 lg:gap-x-24 lg:gap-y-12 justify-items-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div>
                 <Image
                   src="/Image/Github-Photoroom.png"
@@ -182,7 +181,7 @@ export default function Home() {
                 <p className="text-center font-sans font-extrabold">GitHub</p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-5">
                 <Image
                   src="/Image/HTML5.png"
@@ -194,7 +193,7 @@ export default function Home() {
                 <p className="text-center font-sans font-extrabold">HTML5</p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-3">
                 <Image
                   src="/Image/Tailwindcss.svg"
@@ -208,7 +207,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-4">
                 <Image
                   src="/Image/CSS-Photoroom.png"
@@ -220,7 +219,7 @@ export default function Home() {
                 <p className="text-center font-sans font-extrabold">CSS</p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex flex-col items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex flex-col items-center justify-center">
               <div className="space-y-5">
                 <Image
                   src="/Image/JavaScript.jpg"
@@ -234,7 +233,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-2">
                 <Image
                   src="/Image/React.png"
@@ -246,7 +245,7 @@ export default function Home() {
                 <p className="text-center font-sans font-extrabold">React</p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-4">
                 <Image
                   src="/Image/nodejs.png"
@@ -258,7 +257,7 @@ export default function Home() {
                 <p className="text-center font-sans font-extrabold">Node.js</p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-3">
                 <Image
                   src="/Image/Python.jpg"
@@ -270,18 +269,18 @@ export default function Home() {
                 <p className="text-center font-sans font-extrabold">Python</p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-3">
-                <Image 
-                src="/Image/Java.png" 
-                width={65} 
-                height={65} 
-                alt="" 
+                <Image
+                src="/Image/Java.png"
+                width={65}
+                height={65}
+                alt=""
                 />
                 <p className="text-center font-sans font-extrabold">Java</p>
               </div>
             </div>
-            <div className="w-48 h-48 border-2 border-black rounded-xs flex items-center justify-center">
+            <div className="w-full max-w-48 aspect-square border-2 border-black rounded-xs flex items-center justify-center">
               <div className="space-y-4">
                 <Image
                   src="/Image/php.png"
@@ -296,10 +295,10 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <div className="w-full min-h-screen flex flex-col bg-black">
-        <h1 className="text-white text-center text-5xl font-sans mt-24">
+      <div className="w-full min-h-screen flex flex-col bg-black px-4">
+        <h1 className="text-white text-center text-3xl sm:text-4xl lg:text-5xl font-sans mt-16 sm:mt-24">
           My{" "}
-          <span className="w-full font-sans text-5xl font-extrabold">
+          <span className="font-sans text-3xl sm:text-4xl lg:text-5xl font-extrabold">
             Experience
           </span>
         </h1>
